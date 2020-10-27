@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "baseBranches": [
+    "staging"
+  ],
+  "rebaseWhen": "conflicted",
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
+}
