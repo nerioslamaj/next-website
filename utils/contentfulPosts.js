@@ -6,10 +6,25 @@ const client = require('contentful').createClient({
   accessToken: accessToken,
 })
 
-export async function fetchEntries() {
-  const entries = await client.getEntries()
+const getContentfulEntries = (model) => client.getEntries({ content_type: model })
+
+export async function fetchPortfolioEntries() {
+  const entries = await getContentfulEntries('portfolio')
+
   if (entries.items) return entries.items
   console.log(`Error getting Entries for ${contentType.name}.`)
 }
 
-export default { fetchEntries }
+export async function fetchMenuEntries() {
+  const entries = await getContentfulEntries('menu')
+
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
+
+export async function fetchLandingPage() {
+  const entries = await getContentfulEntries('landing')
+
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
