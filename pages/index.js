@@ -24,7 +24,7 @@ export default function Home({ menuItems }) {
       </Head>
 
       <main>
-        <Header/>
+        <Header logo={ menuItems.logo.fields } items={ menuItems.menuItems }/>
       </main>
 
       <Footer/>
@@ -38,9 +38,11 @@ export async function getStaticProps() {
     return p.fields
   })
 
+  console.log(JSON.stringify(menuItems[0]))
+
   return {
     props: {
-      menuItems,
+      menuItems: menuItems[0],
     },
   }
 }
