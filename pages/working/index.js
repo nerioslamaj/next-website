@@ -1,5 +1,5 @@
-import { fetchPortfolioEntries } from '@utils/contentfulPosts'
-import Post from '@components/Post'
+import { fetchContentfulEntries } from '../../utils/contentfulPosts'
+import Post from '../../components/WorkingItem/WorkingItem'
 
 export default function Home({ posts }) {
     return (
@@ -14,7 +14,7 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-    const res = await fetchPortfolioEntries()
+    const res = await fetchContentfulEntries('portfolio')
     const posts = await res.map((p) => {
         return p.fields
     })

@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
-import { fetchMenuEntries } from '@utils/contentfulPosts'
+import { fetchContentfulEntries } from '../utils/contentfulPosts'
 
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
 
 export default function Home({ menuItems }) {
   return (
@@ -60,7 +60,7 @@ export default function Home({ menuItems }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetchMenuEntries()
+  const res = await fetchContentfulEntries('menu')
   const menuItems = await res.map((p) => {
     return p.fields
   })
