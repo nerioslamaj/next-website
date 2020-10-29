@@ -39,8 +39,6 @@ export async function getStaticProps() {
     return p.fields
   })
 
-  console.log(JSON.stringify(menuItems[0]))
-
   return {
     props: {
       menuItems: menuItems[0],
