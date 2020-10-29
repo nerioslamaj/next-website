@@ -1,4 +1,4 @@
-function Post({ title, image, subtitle }) {
+function WorkingItem({ title, image, subtitle }) {
   let { file } = image
 
   return (
@@ -16,4 +16,4 @@ function Post({ title, image, subtitle }) {
   )
 }
 
-export default Post
+export default WorkingItem

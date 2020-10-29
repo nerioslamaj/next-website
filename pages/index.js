@@ -2,8 +2,8 @@ import Head from 'next/head'
 
 import { fetchMenuEntries } from '@utils/contentfulPosts'
 
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Header from '@components/Header/Header'
+import Footer from '@components/Footer/Footer'
 
 export default function Home({ menuItems }) {
   return (

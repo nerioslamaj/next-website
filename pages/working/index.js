@@ -1,5 +1,5 @@
 import { fetchPortfolioEntries } from '@utils/contentfulPosts'
-import Post from '@components/Post'
+import Post from '@components/WorkingItem/WorkingItem'
 
 export default function Home({ posts }) {
     return (
