@@ -1,3 +1,5 @@
+import './WorkingItem.scss'
+
 function WorkingItem({ title, image, subtitle }) {
   let { file } = image
 
