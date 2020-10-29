@@ -1,6 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e368a036-6f58-4f33-a414-473b23a3fd14/deploy-status)](https://app.netlify.com/sites/next-contentful-starter/deploys)
-
-[![CodeFactor](https://www.codefactor.io/repository/github/nerioslamaj/next-website/badge?s=e68cbf1f0810813f1e2f2f60e4b35107f48be081)](https://www.codefactor.io/repository/github/nerioslamaj/next-website)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e368a036-6f58-4f33-a414-473b23a3fd14/deploy-status)](https://app.netlify.com/sites/next-contentful-starter/deploys) [![CodeFactor](https://www.codefactor.io/repository/github/nerioslamaj/next-website/badge?s=e68cbf1f0810813f1e2f2f60e4b35107f48be081)](https://www.codefactor.io/repository/github/nerioslamaj/next-website)
 
 ## Getting Started
 
