@@ -1,12 +1,11 @@
 import Head from 'next/head'
 
-import { fetchPortfolioEntries } from '@utils/contentfulPosts'
+import { fetchMenuEntries } from '@utils/contentfulPosts'
 
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import Post from '@components/Post'
 
-export default function Home({ posts }) {
+export default function Home({ menuItems }) {
   return (
     <div className="container">
       <Head>
@@ -16,11 +15,6 @@ export default function Home({ posts }) {
 
       <main>
         <Header />
-        <div className="posts">
-          {posts.map((p) => {
-            return <Post key={p.id} title={p.miniTitle} image={p.thumbnail.fields} subtitle={p.miniSubtitle} />
-          })}
-        </div>
       </main>
 
       <Footer />
@@ -66,14 +60,14 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetchPortfolioEntries()
-  const posts = await res.map((p) => {
+  const res = await fetchMenuEntries()
+  const menuItems = await res.map((p) => {
     return p.fields
   })
 
   return {
     props: {
-      posts,
+      menuItems,
     },
   }
 }
