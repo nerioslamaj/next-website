@@ -9,7 +9,7 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-    const res = await fetchContentfulEntries('reading')
+    const res = await fetchContentfulEntries('listening')
     const posts = await res.map((p) => {
         return p.fields
     })
