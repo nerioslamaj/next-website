@@ -1,7 +1,6 @@
+import React from 'react'
 import Head from 'next/head'
-
 import { fetchContentfulEntries } from '../utils/contentfulPosts'
-
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 

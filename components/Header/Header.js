@@ -1,8 +1,9 @@
+import React from 'react'
 import './Header.scss'
 
-export default function Header({logo, items}) {
+export const Header = ({logo, items}) => {
   return (
-    <div className="main-header">
+    <header>
       <img src={ logo.file.url } />
       <ul>
         {items.map((item) => {
@@ -13,6 +14,8 @@ export default function Header({logo, items}) {
           )
         })}
       </ul>
-    </div>
+    </header>
   )
 }
+
+export default Header;

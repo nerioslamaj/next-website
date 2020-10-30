@@ -1,6 +1,7 @@
+import React from 'react'
 import './WorkingItem.scss'
 
-function WorkingItem({ title, image, subtitle }) {
+export const WorkingItem = ({ title, image, subtitle }) => {
   let { file } = image
 
   return (

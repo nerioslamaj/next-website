@@ -1,4 +1,6 @@
-function WorkItem() {
+import React from 'react'
+
+export const WorkItem = () => {
 
     return (
         <div className="PortfolioItem">
