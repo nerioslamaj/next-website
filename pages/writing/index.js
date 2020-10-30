@@ -1,6 +1,7 @@
+import React from 'react'
 import { fetchContentfulEntries } from '../../utils/contentfulPosts'
 
-export default function Home({ posts }) {
+export default function Writing({ posts }) {
     return (
         <div>
             Writing

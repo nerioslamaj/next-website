@@ -1,7 +1,8 @@
+import React from 'react'
 import { fetchContentfulEntries } from '../../utils/contentfulPosts'
 import Post from '../../components/WorkingItem/WorkingItem'
 
-export default function Home({ posts }) {
+export default function Working({ posts }) {
     return (
         <div className="container">
             <div className="posts">
