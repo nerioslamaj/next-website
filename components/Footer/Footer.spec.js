@@ -1,5 +1,5 @@
 import React from 'react'
-import { createContainer } from '../domManipulators'
+import { createContainer } from '../_fixtures/domManipulators'
 import { Footer } from './Footer'
 
 describe('Footer Component', () => {

@@ -1,0 +1,5 @@
+{
+  "pluginsFile": "e2e/plugins/index.js",
+  "projectId": "a38bis",
+  "baseUrl": "http://localhost:3000"
+}
