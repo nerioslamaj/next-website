@@ -1,5 +1,5 @@
 import React from 'react'
-import { createContainer } from '../domManipulators'
+import { createContainer } from '../_fixtures/domManipulators'
 import { Header } from './Header'
 
 describe('Header Component', () => {
@@ -11,6 +11,12 @@ describe('Header Component', () => {
 
     beforeEach(() => {
         ({ render, container } = createContainer())
+    });
+
+    it('renders the logo image', () => {
+        render(<Header { ...headerProps } />)
+
+        expect(container.querySelector('img')).not.toBeNull()
     });
 
     it('renders the <header> tag', () => {
