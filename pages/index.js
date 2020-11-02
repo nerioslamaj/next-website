@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { fetchContentfulEntries } from '../utils/contentfulPosts'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
+import Shader from '../components/Shader/Shader'
 
 export default function Home({ menuItems }) {
   return (
@@ -26,6 +27,8 @@ export default function Home({ menuItems }) {
       <main>
         <Header logo={ menuItems.logo.fields } items={ menuItems.menuItems }/>
       </main>
+
+      <Shader />
 
       <Footer/>
     </div>
