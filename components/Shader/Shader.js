@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import canvasSketch from 'canvas-sketch';
 import createShader from 'canvas-sketch-util/shader';
 import glsl from 'glslify';
+import './Shader.scss'
 
 export const Shader = () => {
 

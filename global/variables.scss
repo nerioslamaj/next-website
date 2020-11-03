@@ -1,0 +1,79 @@
+$nl-red: #f74f3f;
+$nl-blue: #3c3cfc;
+$nl-footer: #7c1a0d;
+$nl-footer-hv: #962415;
+$nl-white: #fff;
+$nl-light: #f1f1f1;
+$nl-grey: #4c4c4c;
+$nl-grey2: #aaa;
+$nl-black: #000;
+$nl-dark: #111;
+
+$monitor: 1500px;
+$desktop-large: 1200px;
+$desktop: 992px;
+$tablet: 769px;
+$mobile: 576px;
+$mobile-small: 375px;
+
+%fade {
+	transition: all .3s ease-in-out;
+}
+
+@mixin breakpoint($size) {
+	@if $size==$mobile {
+		@media (min-width: $mobile) {
+			@content;
+		}
+	}
+	@if $size==$tablet {
+		@media (min-width: $tablet) {
+			@content;
+		}
+	}
+	@if $size==$desktop {
+		@media (min-width: $desktop) {
+			@content;
+		}
+	}
+	@if $size==$desktop-large {
+		@media (min-width: $desktop-large) {
+			@content;
+		}
+	}
+	@if $size==$monitor {
+		@media (min-width: $monitor) {
+			@content;
+		}
+	}
+	@if $size==$mobile {
+		@media (min-width: $mobile) {
+			@content;
+		}
+	}
+	@if $size==$tablet {
+		@media (min-width: $tablet) {
+			@content;
+		}
+	}
+	@if $size==$mobile-small {
+		@media (min-width: $mobile-small) {
+			@content;
+		}
+	}
+	@if $size==$mobile-small {
+		@media (min-width: $mobile-small) {
+			@content;
+		}
+	}
+	@if $size==$desktop {
+		@media (min-width: $desktop) {
+			@content;
+		}
+	}
+	@if $size==$desktop-large {
+		@media (min-width: $desktop-large) {
+			@content;
+		}
+	}
+}
