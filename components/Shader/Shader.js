@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import canvasSketch from 'canvas-sketch';
 import createShader from 'canvas-sketch-util/shader';
 import glsl from 'glslify';
+import './Shader.scss'
 
 export const Shader = () => {
 
@@ -20,18 +21,18 @@ export const Shader = () => {
 
       float hue2rgb(float f1, float f2, float hue) {
         if (hue < 0.0)
-            hue += 1.0;
+          hue += 1.0;
         else if (hue > 1.0)
-            hue -= 1.0;
+          hue -= 1.0;
         float res;
         if ((6.0 * hue) < 1.0)
-            res = f1 + (f2 - f1) * 6.0 * hue;
+          res = f1 + (f2 - f1) * 6.0 * hue;
         else if ((2.0 * hue) < 1.0)
-            res = f2;
+          res = f2;
         else if ((3.0 * hue) < 2.0)
-            res = f1 + (f2 - f1) * ((2.0 / 3.0) - hue) * 6.0;
+          res = f1 + (f2 - f1) * ((2.0 / 3.0) - hue) * 6.0;
         else
-            res = f1;
+          res = f1;
         return res;
       }
       
@@ -44,9 +45,9 @@ export const Shader = () => {
           float f2;
           
           if (hsl.z < 0.5)
-              f2 = hsl.z * (1.0 + hsl.y);
+            f2 = hsl.z * (1.0 + hsl.y);
           else
-              f2 = hsl.z + hsl.y - hsl.y * hsl.z;
+            f2 = hsl.z + hsl.y - hsl.y * hsl.z;
               
           float f1 = 2.0 * hsl.z - f2;
           
