@@ -1,10 +1,10 @@
-@import "./variables";
-@import "./working/working";
-@import "./working/working.[pid]";
-@import "./writing/writing";
+@import "./_variables";
+@import "./working";
+@import "./working.[pid]";
+@import "./writing";
 @import "./writing/writing.[pid]";
-@import "./listening/listening";
-@import "./reading/reading";
+@import "./listening";
+@import "./reading";
 
 h1 {
 	font: normal 56px/1.2 'Futura-Bold', sans-serif;
