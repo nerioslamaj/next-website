@@ -1,5 +1,4 @@
-name: Super-Linter
-
+name: Super Linter
 on: pull_request
 
 jobs:
