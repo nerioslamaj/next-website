@@ -16,7 +16,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           record: true
-          command-prefix: 'PERCY_TARGET_BRANCH=staging percy exec -- npx'
+          command-prefix: 'percy exec -- npx'
           start: npm run dev
           wait-on: 'http://localhost:3000'
 
@@ -24,5 +24,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          PERCY_TARGET_BRANCH: staging
           NEXT_PUBLIC_CONTENTFUL_SPACE_ID: ${{ secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID }}
           NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN }}
