@@ -1,5 +1,5 @@
 describe('WorkingItem Component', () => {
-    it('to be truthy', () => {
-        expect(true).toBeTruthy();
-    });
-});
+  it('to be truthy', () => {
+    expect(true).toBeTruthy()
+  })
+})

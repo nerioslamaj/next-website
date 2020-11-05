@@ -3,6 +3,6 @@ describe('Home Page', () => {
     cy.visit('/')
     cy.contains('a', 'Working')
 
-    cy.percySnapshot();
+    cy.percySnapshot()
   })
 })

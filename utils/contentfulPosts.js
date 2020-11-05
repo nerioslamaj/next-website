@@ -3,10 +3,10 @@ const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
 
 const client = require('contentful').createClient({
   space: space,
-  accessToken: accessToken,
+  accessToken: accessToken
 })
 
-export async function fetchContentfulEntries(model) {
+export async function fetchContentfulEntries (model) {
   const entries = await client.getEntries({ content_type: model })
 
   if (entries.items) return entries.items

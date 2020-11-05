@@ -8,11 +8,10 @@
 
 // /* eslint-disable import/no-extraneous-dependencies, global-require */
 // const webpack = require('@cypress/webpack-preprocessor')
-let percyHealthCheck = require('@percy/cypress/task')
+const percyHealthCheck = require('@percy/cypress/task')
 
 module.exports = (on, config) => {
-
-  on("task", percyHealthCheck);
+  on('task', percyHealthCheck)
 
   return Object.assign({}, config, {
     fixturesFolder: 'e2e/fixtures',
