@@ -10,5 +10,5 @@ export async function fetchContentfulEntries (model) {
   const entries = await client.getEntries({ content_type: model })
 
   if (entries.items) return entries.items
-  console.log(`Error getting Entries for ${contentType.name}.`)
+  console.log(`Error getting Entries for ${model}.`)
 }

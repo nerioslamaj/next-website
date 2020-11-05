@@ -15,5 +15,6 @@ jobs:
         uses: github/super-linter@v3
         env:
           FILTER_REGEX_INCLUDE: .*\.(js|yml)
+          FILTER_REGEX_EXCLUDE: .*test/.*
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
