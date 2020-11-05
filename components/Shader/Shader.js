@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
-import canvasSketch from 'canvas-sketch';
-import createShader from 'canvas-sketch-util/shader';
-import glsl from 'glslify';
+import React, { useEffect } from 'react'
+import canvasSketch from 'canvas-sketch'
+import createShader from 'canvas-sketch-util/shader'
+import glsl from 'glslify'
 import './Shader.scss'
 
 export const Shader = () => {
-
   useEffect(() => {
     const settings = {
       context: 'webgl',
@@ -14,7 +13,7 @@ export const Shader = () => {
       scaleToFit: false,
       id: 'shader',
       parent: document.getElementById('shaderParent')
-    };
+    }
 
     const frag = glsl(
       `precision highp float;
@@ -163,8 +162,8 @@ export const Shader = () => {
         vec3 color = hsl2rgb(col, 1.0, 0.55);
         gl_FragColor = vec4(vec3(color), 1);
       }`
-    );
-    
+    )
+
     const sketch = ({ gl }) => {
       return createShader({
         clearColor: 'rgba(255,255,255,0)',
@@ -174,12 +173,12 @@ export const Shader = () => {
           time: ({ time }) => time,
           aspect: ({ width, height }) => (width / height)
         }
-      });
-    };
-    canvasSketch(sketch, settings);
+      })
+    }
+    canvasSketch(sketch, settings)
   })
 
-  return <div id="shaderParent"></div>
+  return <div id='shaderParent' />
 }
 
 export default Shader
