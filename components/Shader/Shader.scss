@@ -42,7 +42,9 @@
       100% 100%,  /* 15 */
       100% 0%     /* 16 */
     );
-    &.no-clip {
+  }
+  &.no-clip {
+    canvas {
       top: 37%;
       left: 50%;
       z-index: 1;

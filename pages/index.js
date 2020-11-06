@@ -1,9 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
 import { fetchContentfulEntries } from '../utils/contentful'
+import Stars from '../components/Stars/Stars.jsx'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Shader from '../components/Shader/Shader'
+import Landing from '../components/Landing/Landing.jsx'
 
 export default function Home ({ menuItems }) {
   return (
@@ -24,11 +25,12 @@ export default function Home ({ menuItems }) {
         <title>Nerios Lamaj - Personal Portfolio</title>
       </Head>
 
-      <main>
-        <Header logo={menuItems.logo.fields} items={menuItems.menuItems} />
-      </main>
+      <Stars />
+      <Header logo={menuItems.logo.fields} items={menuItems.menuItems} />
 
-      <Shader />
+      <main>
+        <Landing />
+      </main>
 
       <Footer />
     </div>

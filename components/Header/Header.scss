@@ -1,0 +1,52 @@
+@import '../../styles/_variables';
+
+header {
+  padding: 40px 0 0;
+  text-align: center;
+  position: absolute;
+
+  @include breakpoint($tablet) {
+    padding: 20px 0;
+    text-align: unset;
+  }
+
+  .Inner-Menu {
+    display: flex;
+    justify-content: space-between;
+
+    .Logo {
+      height: 24px;
+
+      @include breakpoint($tablet) {
+        height: 28px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      @include breakpoint($tablet) {
+        display: block;
+      }
+
+      li {
+        display: inline;
+        margin-left: 42px;
+
+        a {
+          color: $NL-white;
+          display: inline;
+          @extend %NL-fade;
+          cursor: pointer;
+
+          &:hover {
+            color: $NL-red;
+            @extend %NL-fade;
+          }
+        }
+      }
+    }
+  }
+}

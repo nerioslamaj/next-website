@@ -2,22 +2,22 @@
 
 .Footer {
   padding: 80px 0 0;
-  background-color: $nl-red;
+  background-color: $NL-red;
   h2 {
-    color: $nl-white;
+    color: $NL-white;
     text-align: center;
     margin-bottom: 12px;
   }
   h3 {
-    color: $nl-white;
+    color: $NL-white;
     text-align: center;
     margin-bottom: 22px;
     a {
-      color: $nl-white;
-      @extend %fade;
+      color: $NL-white;
+      @extend %NL-fade;
       &:hover {
-        color: $nl-footer-hv;
-        @extend %fade;
+        color: $NL-footer-hv;
+        @extend %NL-fade;
       }
     }
   }
@@ -30,41 +30,31 @@
     a {
       font-size: 22px;
       margin: 0 10px;
-      color: $nl-footer;
+      color: $NL-footer;
       cursor: pointer;
-      @extend %fade;
+      @extend %NL-fade;
       &:hover {
-        color: $nl-footer-hv;
-        @extend %fade;
+        color: $NL-footer-hv;
+        @extend %NL-fade;
       }
       @include breakpoint($tablet) {
         font-size: 24px;
         margin: 0 16px;
       }
     }
-    .goodreads {
-      font-size: 26px;
-      font-family: sans-serif;
-      transform: translateY(-4px);position: relative;
-      top: -7px;
-      @include breakpoint($tablet) {
-        font-size: 26px;
-        top: -8px;
-      }
-    }
   }
   .mini-footer {
-    border-top: 1px solid $nl-footer;
+    border-top: 1px solid $NL-footer;
     padding: 30px 0;
     p {
-      color: $nl-footer;
+      color: $NL-footer;
       a {
-        color: $nl-footer;
-        @extend %fade;
+        color: $NL-footer;
+        @extend %NL-fade;
         &:hover {
-          background-color: $nl-blue;
-          color: $nl-white;
-          @extend %fade;
+          background-color: $NL-blue;
+          color: $NL-white;
+          @extend %NL-fade;
         }
       }
     }
