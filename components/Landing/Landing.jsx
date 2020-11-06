@@ -20,7 +20,7 @@ export const Landing = () =>{
           <Button btnColor={'#f74f3f'} btnText={'Recent Update'} btnClick={'OPEN_MODAL'}></Button>
         </div>
       </div>
-      <div style="display: none">
+      <div style={{display: 'none'}}>
         <MeNowModal />
       </div>
       <ScrollMouse />
