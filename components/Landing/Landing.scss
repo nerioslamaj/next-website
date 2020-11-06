@@ -1,0 +1,85 @@
+@import '../../styles/_variables';
+
+.Landing {
+  width: 100%;
+  height: 100vh;
+
+  .Intro-Block {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    width: 292px;
+    top: calc(37% + 220px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    flex-direction: column;
+    @include breakpoint($mobile) {
+      top: calc(34% + 280px);
+      width: 395px;
+    }
+    @include breakpoint($tablet) {
+      top: 50%;
+      left: calc(48% + 180px);
+      text-align: left;
+    }
+    @include breakpoint($desktop) {
+      width: 522px;
+      top: 50%;
+      left: calc(48% + 250px);
+      text-align: left;
+    }
+    .Name-Surname {
+      transform: translate(0, 0);
+      left: 0;
+      transition: all .3s;
+      position: relative;
+      color: $NL-white;
+      opacity: 1;
+      margin-bottom: 12px;
+      @include breakpoint($mobile) {
+        margin-bottom: 16px;
+      }
+      span {
+        margin-right: 1px;
+        opacity: 0;
+        animation-name: NL-Blink;
+        animation-fill-mode: both;
+        animation-duration: .3s;
+        animation-timing-function: ease;
+        @for $i from 0 to 11 {
+          &:nth-child(#{$i + 1}) {
+            animation-delay: #{($i/10) + 1}s;
+          }
+        }
+      }
+    }
+    h4, p, .btn {
+      display: inline-block;
+      transition: all .3s;
+      left: 0;
+      transform: translate(-50%, 0);
+      position: relative;
+      opacity: 0;
+      color: $NL-white;
+      animation: NL-Float-Up .2s ease;
+      animation-fill-mode: both;
+    }
+    h4 {
+      animation-delay: 1.85s;
+    }
+    p {
+      animation-delay: 2s;
+      margin-bottom: 14px;
+      font-size: 14px;
+      @include breakpoint($mobile) {
+        margin-bottom: 36px;
+        font-size: 16px;
+      }
+    }
+    .btn {
+      animation-delay: 2.15s;
+    }
+  }
+
+}

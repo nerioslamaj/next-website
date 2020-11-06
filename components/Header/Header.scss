@@ -3,6 +3,7 @@
 header {
   padding: 40px 0 0;
   text-align: center;
+  position: absolute;
 
   @include breakpoint($tablet) {
     padding: 20px 0;

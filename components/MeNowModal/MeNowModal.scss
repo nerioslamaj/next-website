@@ -1,0 +1,46 @@
+@import '../../styles/_variables';
+
+.MeNowModal {
+  position: fixed;
+  opacity: 0;
+  animation: NL-Fade-In 0.3s ease 0.3s;
+  animation-fill-mode: both;
+  background-color: $NL-white;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  padding: 60px 50px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: scroll;
+  box-shadow: 0 6px 35px rgba(0,0,0,0.35);
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar { 
+    display: none; 
+  } 
+  h1 {
+    margin-bottom: 10px;
+  }
+  h6 {
+    margin-bottom: 40px;
+    color: $NL-blue;
+  }
+  p {
+    margin-bottom: 20px;
+    a {
+      @extend %NL-fade;
+      color: $NL-black;
+      &:hover {
+        @extend %NL-fade;
+        color: $NL-white;
+        background-color: $NL-blue;
+      }
+    }
+  }
+  .Button {
+    float: right;
+    margin-top: 20px;
+  }
+}
