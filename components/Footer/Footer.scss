@@ -1,7 +1,7 @@
-@import "../../Const.scss";
+@import '../../styles/_variables';
 
 .Footer {
-  padding: 80px 0 0 0;
+  padding: 80px 0 0;
   background-color: $nl-red;
   h2 {
     color: $nl-white;
