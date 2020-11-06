@@ -9,8 +9,8 @@ export const Footer = () => {
   }
 
   return (
-    <footer className="Footer row" id="contact">
-      <div className="container">
+    <footer className="Footer NL-Row" id="contact">
+      <div className="NL-Container">
         <h2 className="alt">Let's keep in touch</h2>
         <h3 className="alt"><a onClick={socialClick('Email')} target="_blank" href="mailto:nerios.lamaj@gmail.com">nerios.lamaj@gmail.com</a></h3>
         <div className="social-media">
