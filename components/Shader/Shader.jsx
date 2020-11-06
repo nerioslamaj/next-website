@@ -5,7 +5,7 @@ import glsl from 'glslify'
 import './Shader.scss'
 
 export const Shader = () => {
-  const [clippedCanvas, clipCanvas] = useState(true);
+  const [clippedCanvas, clipCanvas] = useState(true)
 
   useEffect(() => {
     const settings = {
@@ -179,7 +179,7 @@ export const Shader = () => {
     }
     canvasSketch(sketch, settings)
   })
-  return <div className={ clippedCanvas ? 'no-clip' : '' } id='shaderParent' />
+  return <div className={clippedCanvas ? 'no-clip' : ''} id='shaderParent' />
 }
 
 export default Shader
