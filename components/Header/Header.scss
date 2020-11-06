@@ -1,57 +1,45 @@
 @import '../../styles/_variables';
 
 header {
-  position: absolute;
-  background: none;
-  padding: 40px 0 0 0;
-  z-index: 2;
-  top: 0;
-  left: 0;
+  padding: 40px 0 0;
   text-align: center;
-  @extend %NL-fade;
+
   @include breakpoint($tablet) {
     padding: 20px 0;
     text-align: unset;
-    position: fixed;
-    background: linear-gradient(rgba(17,17,17,0.65), rgba(17,17,17,0));
   }
-  &.menu-up {
-    transform: translateY(-100%);
-    @extend %NL-fade;
-  }
-  .inner-menu {
+
+  .Inner-Menu {
+    display: flex;
+    justify-content: space-between;
+
     .Logo {
-      svg {
-        height: 24px;
-        fill: $NL-white;
-        cursor: pointer;
-        @extend %NL-fade;
-        @include breakpoint($tablet) {
-          height: 28px;
-        }
-        &:hover {
-          fill: $NL-red;
-          @extend %NL-fade;
-        }
+      height: 24px;
+
+      @include breakpoint($tablet) {
+        height: 28px;
       }
     }
+
     ul {
       list-style: none;
-      float: right;
-      position: relative;
-      top: 5px;
-      display: none;
+      padding: 0;
+      margin: 0;
+
       @include breakpoint($tablet) {
         display: block;
       }
+
       li {
         display: inline;
         margin-left: 42px;
-        h6 {
+
+        a {
           color: $NL-white;
           display: inline;
           @extend %NL-fade;
           cursor: pointer;
+
           &:hover {
             color: $NL-red;
             @extend %NL-fade;
