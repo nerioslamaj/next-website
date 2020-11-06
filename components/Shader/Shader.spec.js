@@ -1,6 +1,6 @@
 import React from 'react'
 import { createContainer } from '../_fixtures/domManipulators'
-import { Shader } from './Shader'
+import { Shader } from './Shader.jsx'
 
 describe('Shader Component', () => {
   let render, container

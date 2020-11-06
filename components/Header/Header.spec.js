@@ -1,6 +1,6 @@
 import React from 'react'
 import { createContainer } from '../_fixtures/domManipulators'
-import { Header } from './Header'
+import { Header } from './Header.jsx'
 
 describe('Header Component', () => {
   let render, container

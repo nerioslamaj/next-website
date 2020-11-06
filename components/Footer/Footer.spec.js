@@ -1,6 +1,6 @@
 import React from 'react'
 import { createContainer } from '../_fixtures/domManipulators'
-import { Footer } from './Footer'
+import { Footer } from './Footer.jsx'
 
 describe('Footer Component', () => {
   let render, container
