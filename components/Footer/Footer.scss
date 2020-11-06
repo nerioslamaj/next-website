@@ -1,0 +1,72 @@
+@import "../../Const.scss";
+
+.Footer {
+  padding: 80px 0 0 0;
+  background-color: $nl-red;
+  h2 {
+    color: $nl-white;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  h3 {
+    color: $nl-white;
+    text-align: center;
+    margin-bottom: 22px;
+    a {
+      color: $nl-white;
+      @extend %fade;
+      &:hover {
+        color: $nl-footer-hv;
+        @extend %fade;
+      }
+    }
+  }
+  .social-media {
+    margin: 50px 0;
+    text-align: center;
+    @include breakpoint($tablet) {
+      margin: 60px 0;
+    }
+    a {
+      font-size: 22px;
+      margin: 0 10px;
+      color: $nl-footer;
+      cursor: pointer;
+      @extend %fade;
+      &:hover {
+        color: $nl-footer-hv;
+        @extend %fade;
+      }
+      @include breakpoint($tablet) {
+        font-size: 24px;
+        margin: 0 16px;
+      }
+    }
+    .goodreads {
+      font-size: 26px;
+      font-family: sans-serif;
+      transform: translateY(-4px);position: relative;
+      top: -7px;
+      @include breakpoint($tablet) {
+        font-size: 26px;
+        top: -8px;
+      }
+    }
+  }
+  .mini-footer {
+    border-top: 1px solid $nl-footer;
+    padding: 30px 0;
+    p {
+      color: $nl-footer;
+      a {
+        color: $nl-footer;
+        @extend %fade;
+        &:hover {
+          background-color: $nl-blue;
+          color: $nl-white;
+          @extend %fade;
+        }
+      }
+    }
+  }
+}
