@@ -1,5 +1,5 @@
 import React from 'react'
-import { fetchContentfulEntries } from '../../utils/contentfulPosts'
+import { fetchContentfulEntries } from '../../utils/contentful'
 
 export default function Reading ({ posts }) {
   return (

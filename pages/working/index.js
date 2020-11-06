@@ -1,5 +1,5 @@
 import React from 'react'
-import { fetchContentfulEntries } from '../../utils/contentfulPosts'
+import { fetchContentfulEntries } from '../../utils/contentful'
 import Post from '../../components/WorkingItem/WorkingItem'
 
 export default function Working ({ posts }) {
