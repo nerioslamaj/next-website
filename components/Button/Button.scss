@@ -3,12 +3,12 @@
 span.Button {
   cursor: pointer;
   &:hover {
-    .line {
+    .Button-Line {
       width: 42px;
       @extend %NL-fade;
     }
   }
-  .line {
+  .Button-Line {
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 0 12px;

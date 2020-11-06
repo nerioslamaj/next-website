@@ -7,7 +7,7 @@ export const ScrollMouse = () => {
                     <circle cx="12.5" cy="11.5" r="1.5"></circle>
                   </svg>`
     return (
-      <span dangerouslySetInnerHTML={{__html: svgTag }}></span>
+      <a href="#about" dangerouslySetInnerHTML={{__html: svgTag }}></a>
     )
 }
 

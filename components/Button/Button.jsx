@@ -10,7 +10,7 @@ const Button = props => {
   return (
     <span style={{color: props.btnColor}} className="Button" onClick={click}>
       {props.btnText}
-      <div style={{backgroundColor: props.btnColor}} className="line"></div>
+      <div style={{backgroundColor: props.btnColor}} className="Button-Line"></div>
     </span>
   )
 }
