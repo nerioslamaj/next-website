@@ -42,16 +42,6 @@
         margin: 0 16px;
       }
     }
-    .goodreads {
-      font-size: 26px;
-      font-family: sans-serif;
-      transform: translateY(-4px);position: relative;
-      top: -7px;
-      @include breakpoint($tablet) {
-        font-size: 26px;
-        top: -8px;
-      }
-    }
   }
   .mini-footer {
     border-top: 1px solid $NL-footer;

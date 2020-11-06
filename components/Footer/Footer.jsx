@@ -16,7 +16,7 @@ export const Footer = () => {
         <div className="social-media">
           <a onClick={socialClick('Linkedin')} target="_blank" href="https://www.linkedin.com/in/nerioslamaj/"><FaLinkedin /></a>
           <a onClick={socialClick('Github')} target="_blank" href="https://github.com/nerioslamaj"><FaGithub /></a>
-          <a onClick={socialClick('Goodreads')} target="_blank" href="https://www.goodreads.com/user/show/49899773-nerios-lamaj" className="goodreads"><FaGoodreads /></a>
+          <a onClick={socialClick('Goodreads')} target="_blank" href="https://www.goodreads.com/user/show/49899773-nerios-lamaj"><FaGoodreads /></a>
           <a onClick={socialClick('Codepen')} target="_blank" href="https://codepen.io/nerios/"><FaCodepen /></a>
           <a onClick={socialClick('Dirbbble')} target="_blank" href="https://dribbble.com/nerioslamaj"><FaDribbble /></a>
           <a onClick={socialClick('Twitter')} target="_blank" href="https://twitter.com/NeriosLamaj"><FaTwitter /></a>
