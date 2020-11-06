@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import canvasSketch from 'canvas-sketch'
 import createShader from 'canvas-sketch-util/shader'
 import glsl from 'glslify'
 import './Shader.scss'
 
 export const Shader = () => {
+  const [clippedCanvas, clipCanvas] = useState(false);
+
   useEffect(() => {
     const settings = {
       context: 'webgl',
@@ -178,7 +180,11 @@ export const Shader = () => {
     canvasSketch(sketch, settings)
   })
 
-  return <div id='shaderParent' />
+  setTimeout(() => {
+    clipCanvas(true)
+  }, 1000)
+
+  return <div className={ clippedCanvas ? 'no-clip' : '' } id='shaderParent' />
 }
 
 export default Shader
