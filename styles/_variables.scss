@@ -1,13 +1,13 @@
-$nl-red: #f74f3f;
-$nl-blue: #3c3cfc;
-$nl-footer: #7c1a0d;
-$nl-footer-hv: #962415;
-$nl-white: #fff;
-$nl-light: #f1f1f1;
-$nl-grey: #4c4c4c;
-$nl-grey2: #aaa;
-$nl-black: #000;
-$nl-dark: #111;
+$NL-red: #f74f3f;
+$NL-blue: #3c3cfc;
+$NL-footer: #7c1a0d;
+$NL-footer-hv: #962415;
+$NL-white: #fff;
+$NL-light: #f1f1f1;
+$NL-grey: #4c4c4c;
+$NL-grey2: #aaa;
+$NL-black: #000;
+$NL-dark: #111;
 
 $monitor: 1500px;
 $desktop-large: 1200px;
@@ -16,7 +16,7 @@ $tablet: 769px;
 $mobile: 576px;
 $mobile-small: 375px;
 
-%fade {
+%NL-fade {
 	transition: all .3s ease-in-out;
 }
 
