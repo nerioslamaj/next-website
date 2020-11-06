@@ -6,6 +6,18 @@
 @import "./listening";
 @import "./reading";
 
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, "Segoe UI", "Roboto", "Oxygen",
+	  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	  sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $NL-dark;
+}
+
 h1 {
 	font: normal 56px/1.2 'Futura-Bold', sans-serif;
 }
@@ -58,6 +70,10 @@ span {
 
 .NL-Center {
 	text-align: center;
+}
+
+.NL-No-Txt-Dec {
+  text-decoration: none;
 }
 
 @keyframes NL-Blink {

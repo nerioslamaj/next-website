@@ -17,7 +17,7 @@ $mobile: 576px;
 $mobile-small: 375px;
 
 %NL-fade {
-	transition: all .3s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 @mixin breakpoint($size) {
