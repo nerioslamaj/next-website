@@ -6,6 +6,10 @@
 @import "./listening";
 @import "./reading";
 
+@font-face {
+	font-family: "Univers";
+	src: url("/fonts/Univers_LT.ttf") format("truetype-variations");
+}
 
 body {
 	margin: 0;
@@ -19,7 +23,7 @@ body {
 }
 
 h1 {
-	font: normal 56px/1.2 'Futura-Bold', sans-serif;
+	font: normal 56px/1.2 'Univers', sans-serif;
 }
 
 h2 {
@@ -78,14 +82,14 @@ span {
 
 @keyframes NL-Blink {
 	0% {
-		opacity: 0
+		opacity: 0;
 	}
 	33%,
 	66% {
-		opacity: 1
+		opacity: 1;
 	}
 	to {
-		opacity: .6
+		opacity: .6;
 	}
 }
 
