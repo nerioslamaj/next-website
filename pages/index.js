@@ -1,10 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import { fetchContentfulEntries } from '../utils/contentful'
 import Stars from '../components/Stars/Stars.jsx'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Landing from '../components/Landing/Landing.jsx'
+import Landing from '../components/Landing/Landing'
 
 export default function Home ({ menuItems }) {
   return (

@@ -1,8 +1,8 @@
 import React from 'react'
-import Shader from '../Shader/Shader.jsx'
-import Button from '../Button/Button.jsx'
-import MeNowModal from '../MeNowModal/MeNowModal.jsx'
-import ScrollMouse from '../ScrollMouse/ScrollMouse.jsx'
+import Shader from '../Shader/Shader'
+import AboutText from '../AboutText/AboutText'
+import MeNowModal from '../MeNowModal/MeNowModal'
+import ScrollMouse from '../ScrollMouse/ScrollMouse'
 import './Landing.scss'
 
 export const Landing = () => {
@@ -16,12 +16,7 @@ export const Landing = () => {
         </h1>
         <p>Software Engineer</p>
         <h4>Creating digital products with passion</h4>
-        <div className='btn'>
-          <Button btnColor='#f74f3f' btnText='Recent Update' btnClick='OPEN_MODAL' />
-        </div>
-      </div>
-      <div style={{ display: 'none' }}>
-        <MeNowModal />
+        <AboutText />
       </div>
       <ScrollMouse />
     </div>
