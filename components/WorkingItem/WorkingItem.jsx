@@ -1,6 +1,5 @@
 import React from 'react'
 import './WorkingItem.scss'
-import Router from 'next/router'
 
 export const WorkingItem = props => {
   const { 

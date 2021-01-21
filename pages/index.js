@@ -26,7 +26,7 @@ export default function Home ({ menuItems }) {
       </Head>
 
       <Stars />
-      <Header logo={menuItems.logo.fields} items={menuItems.menuItems} />
+      <Header />
 
       <main>
         <Landing />
@@ -35,17 +35,4 @@ export default function Home ({ menuItems }) {
       <Footer />
     </div>
   )
-}
-
-export async function getStaticProps () {
-  const res = await fetchContentfulEntries('menu')
-  const menuItems = await res.map((p) => {
-    return p.fields
-  })
-
-  return {
-    props: {
-      menuItems: menuItems[0]
-    }
-  }
 }
