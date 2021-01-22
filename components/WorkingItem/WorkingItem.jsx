@@ -2,7 +2,7 @@ import React from 'react'
 import './WorkingItem.scss'
 
 export const WorkingItem = props => {
-  const { 
+  const {
     title,
     subtitle,
     postId,

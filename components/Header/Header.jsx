@@ -11,18 +11,17 @@ export const Header = props => {
   const items = [
     'Working',
     'Writing',
-    'Reading',
+    'Reading'
   ]
 
   return (
     <header>
       <Container>
         <div className='Inner-Menu'>
-          { props.hideLogo ? <div></div> :
-            <a href="/">
+          {props.hideLogo ? <div />
+            : <a href='/'>
               <Shader />
-            </a>
-          }
+              </a>}
           <ul>
             {items.map((item) => {
               return (

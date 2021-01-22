@@ -25,7 +25,7 @@ export default function Home ({ menuItems }) {
       </Head>
 
       <Stars />
-      <Header hideLogo={ false }/>
+      <Header hideLogo={false} />
 
       <main>
         <Landing />
