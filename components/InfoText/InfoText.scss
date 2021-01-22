@@ -1,0 +1,33 @@
+@import '../../styles/_variables';
+
+.InfoText {
+  display: flex;
+  margin-bottom: 140px;
+  flex-direction: column;
+  @include breakpoint($tablet) {
+    flex-direction: NL-Row;
+  }
+  div {
+    padding: 0 15px;
+    h2 {
+      color: $NL-red;
+      margin: 44px 0 24px 0;
+      @include breakpoint($tablet) {
+        margin: 0 0 40px 0;
+      }
+    }
+    p {
+      color: $NL-white;
+      margin-bottom: 20px;
+      a {
+        color: $NL-white;
+        cursor: pointer;
+        @extend %NL-fade;
+        &:hover {
+          background-color: $NL-blue;
+          @extend %NL-fade;
+        }
+      }
+    }
+  }
+}

@@ -1,25 +1,25 @@
 import React from 'react'
-import Shader from '../Shader/Shader'
 import AboutText from '../AboutText/AboutText'
-import MeNowModal from '../MeNowModal/MeNowModal'
-import ScrollMouse from '../ScrollMouse/ScrollMouse'
+import Shader from '../Shader/Shader'
+import { Grid, Container } from '@material-ui/core'
 import './Landing.scss'
 
 export const Landing = () => {
   return (
-    <div className='Landing'>
-      <Shader />
-      <div className='Intro-Block'>
-        <h1 className='Name-Surname'>
-          <span>N</span><span>e</span><span>r</span><span>i</span><span>o</span><span>s </span>
-          <span>L</span><span>a</span><span>m</span><span>a</span><span>j</span>
-        </h1>
-        <p>Software Engineer</p>
-        <h4>Creating digital products with passion</h4>
-        <AboutText />
-      </div>
-      <ScrollMouse />
-    </div>
+    <Container style={{paddingTop: '320px'}}>
+      <Grid container spacing={3} className='Intro-Block'>
+        <Grid item xs={8}>
+          <h1 className='Name-Surname name'>
+            <span>N</span><span>e</span><span>r</span><span>i</span><span>o</span><span>s </span>
+            <span>L</span><span>a</span><span>m</span><span>a</span><span>j</span>
+          </h1>
+          <AboutText />
+        </Grid>
+        <Grid item xs={4}>
+          {/* <Shader dimensions={[320, 320]} /> */}
+        </Grid>
+      </Grid>
+    </Container>
   )
 }
 
