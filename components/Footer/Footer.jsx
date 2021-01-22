@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaCodepen, FaDribbble, FaGoodreads } from 'react-icons/fa'
-import Companies from '../Companies/Companies'
+import Companies from '../Companies/Companies.jsx'
 import './Footer.scss'
 
 export const Footer = () => {

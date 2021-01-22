@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Grid } from '@material-ui/core'
-import Shader from '../Shader/Shader'
+import Shader from '../Shader/Shader.jsx'
 import './Header.scss'
 
 export const Header = props => {

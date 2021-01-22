@@ -1,6 +1,5 @@
 import React from 'react'
-import AboutText from '../AboutText/AboutText'
-import Shader from '../Shader/Shader'
+import AboutText from '../AboutText/AboutText.jsx'
 import { Grid, Container } from '@material-ui/core'
 import './Landing.scss'
 
