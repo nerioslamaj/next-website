@@ -13,22 +13,16 @@ describe('Header Component', () => {
     ({ render, container } = createContainer())
   })
 
-  it('renders the logo image', () => {
-    render(<Header {...headerProps} />)
-
-    expect(container.querySelector('img')).not.toBeNull()
-  })
-
   it('renders the <header> tag', () => {
     render(<Header {...headerProps} />)
 
     expect(container.querySelector('header')).not.toBeNull()
   })
 
-  it('renders four <li> tags', () => {
+  it('renders three <li> tags', () => {
     render(<Header {...headerProps} />)
 
-    expect(container.querySelector('ul').children).toHaveLength(4)
+    expect(container.querySelector('ul').children).toHaveLength(3)
   })
 
   it('renders four <a> tags', () => {
