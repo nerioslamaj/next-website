@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaCodepen, FaDribbble, FaGoodreads } from 'react-icons/fa'
+import Companies from '../Companies/Companies.jsx'
 import './Footer.scss'
 
 export const Footer = () => {
@@ -10,6 +11,7 @@ export const Footer = () => {
   return (
     <footer className='Footer NL-Row' id='contact'>
       <div className='NL-Container'>
+        <Companies />
         <h2 className='alt'>Let's keep in touch</h2>
         <h3 className='alt'><a onClick={socialClick('Email')} target='_blank' href='mailto:nerios.lamaj@gmail.com'>nerios.lamaj@gmail.com</a></h3>
         <div className='social-media'>

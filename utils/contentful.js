@@ -12,3 +12,10 @@ export async function fetchContentfulEntries (model) {
   if (entries.items) return entries.items
   console.log(`Error getting Entries for ${model}.`)
 }
+
+export async function fetchContentfulEntry (id) {
+  const entry = await client.getEntry(id)
+
+  if (entry.fields) return entry.fields
+  console.log(`Error getting Entry with ID: ${id}.`)
+}

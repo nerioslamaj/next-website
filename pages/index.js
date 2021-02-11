@@ -1,10 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import { fetchContentfulEntries } from '../utils/contentful'
 import Stars from '../components/Stars/Stars.jsx'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Landing from '../components/Landing/Landing.jsx'
+import Landing from '../components/Landing/Landing'
 
 export default function Home ({ menuItems }) {
   return (
@@ -26,7 +25,7 @@ export default function Home ({ menuItems }) {
       </Head>
 
       <Stars />
-      <Header logo={menuItems.logo.fields} items={menuItems.menuItems} />
+      <Header hideLogo={false} />
 
       <main>
         <Landing />
@@ -35,17 +34,4 @@ export default function Home ({ menuItems }) {
       <Footer />
     </div>
   )
-}
-
-export async function getStaticProps () {
-  const res = await fetchContentfulEntries('menu')
-  const menuItems = await res.map((p) => {
-    return p.fields
-  })
-
-  return {
-    props: {
-      menuItems: menuItems[0]
-    }
-  }
 }
