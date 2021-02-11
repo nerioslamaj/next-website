@@ -7,57 +7,121 @@
 @import "./reading";
 
 @font-face {
-	font-family: "Univers";
-	src: url("/fonts/Univers_LT.ttf") format("truetype-variations");
+	font-family: "Garamond_400";
+	src: url("/fonts/Garamond_400.ttf") format("truetype-variations");
+}
+@font-face {
+	font-family: "Garamond_400_I";
+	src: url("/fonts/Garamond_400_I.ttf") format("truetype-variations");
+}
+@font-face {
+	font-family: "Garamond_600";
+	src: url("/fonts/Garamond_600.ttf") format("truetype-variations");
+}
+@font-face {
+	font-family: "Garamond_600_I";
+	src: url("/fonts/Garamond_600_I.ttf") format("truetype-variations");
+}
+@font-face {
+	font-family: "Garamond_700";
+	src: url("/fonts/Garamond_700.ttf") format("truetype-variations");
+}
+@font-face {
+	font-family: "Garamond_700_I";
+	src: url("/fonts/Garamond_700_I.ttf") format("truetype-variations");
+}
+
+@font-face {
+	font-family: "Brandon_200";
+	src: url("/fonts/Brandon_200.otf");
+}
+@font-face {
+	font-family: "Brandon_200_I";
+	src: url("/fonts/Brandon_200_I.otf");
+}
+@font-face {
+	font-family: "Brandon_300";
+	src: url("/fonts/Brandon_300.otf");
+}
+@font-face {
+	font-family: "Brandon_300_I";
+	src: url("/fonts/Brandon_300_I.otf");
+}
+@font-face {
+	font-family: "Brandon_400";
+	src: url("/fonts/Brandon_400.otf");
+}
+@font-face {
+	font-family: "Brandon_400_I";
+	src: url("/fonts/Brandon_400_I.otf");
+}
+@font-face {
+	font-family: "Brandon_600";
+	src: url("/fonts/Brandon_600.otf");
+}
+@font-face {
+	font-family: "Brandon_600_I";
+	src: url("/fonts/Brandon_600_I.otf");
+}
+@font-face {
+	font-family: "Brandon_700";
+	src: url("/fonts/Brandon_700.otf");
+}
+@font-face {
+	font-family: "Brandon_700_I";
+	src: url("/fonts/Brandon_700_I.otf");
+}
+@font-face {
+	font-family: "Brandon_900";
+	src: url("/fonts/Brandon_900.otf");
+}
+@font-face {
+	font-family: "Brandon_900_I";
+	src: url("/fonts/Brandon_900_I.otf");
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: -apple-system, "Segoe UI", "Roboto", "Oxygen",
-	  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-	  sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: $NL-dark;
+	background-color: $NL-black;
 }
 
 h1 {
-	font: normal 56px/1.2 'Univers', sans-serif;
+	font: normal 56px/1.2 'Brandon_900', sans-serif;
+	&.name {
+		font-size: 96px;
+	}
 }
 
 h2 {
-	font: normal 26px/1.2 'Futura-Bold', sans-serif;
+	font: normal 48px/1.2 'Brandon_700', sans-serif;
 }
 
 h3 {
-	font: normal 20px/1.5 'Space Mono', monospace;
-	font-weight: 700;
+	font: normal 36px/1.2 'Garamond_600', serif;
 }
 
 h4 {
-	font: normal 18px/1.5 'Space Mono', monospace;
-	font-weight: 700;
+	font: normal 28px/1.2 'Garamond_400', serif;
 }
 
 h5 {
-	font: normal 18px/1.5 'Space Mono', monospace;
-	font-weight: 700;
+	font: normal 18px/1.2 'Garamond_400', serif;
 }
 
 h6 {
-	font: normal 16px/1.5 'Space Mono', monospace;
-	font-weight: 700;
+	font: normal 16px/1.2 'Garamond_400', serif;
 }
 
 p {
-	font: normal 16px/1.5 'Space Mono', monospace;
-	font-weight: 400;
+	font: normal 16px/1.2 'Garamond_400', serif;
 }
 
 span {
 	&.Button {
-		font: normal 16px/1.5 'Space Mono', monospace;
+		font: normal 18px/1.2 'Brandon_600', sans-serif;
 		font-weight: 700;
 	}
 }

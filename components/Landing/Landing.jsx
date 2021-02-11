@@ -1,30 +1,24 @@
 import React from 'react'
-import Shader from '../Shader/Shader.jsx'
-import Button from '../Button/Button.jsx'
-import MeNowModal from '../MeNowModal/MeNowModal.jsx'
-import ScrollMouse from '../ScrollMouse/ScrollMouse.jsx'
+import AboutText from '../AboutText/AboutText.jsx'
+import { Grid, Container } from '@material-ui/core'
 import './Landing.scss'
 
 export const Landing = () => {
   return (
-    <div className='Landing'>
-      <Shader />
-      <div className='Intro-Block'>
-        <h1 className='Name-Surname'>
-          <span>N</span><span>e</span><span>r</span><span>i</span><span>o</span><span>s </span>
-          <span>L</span><span>a</span><span>m</span><span>a</span><span>j</span>
-        </h1>
-        <h4>Front End Engineer</h4>
-        <p>Creating Digital Products with passion</p>
-        <div className='btn'>
-          <Button btnColor='#f74f3f' btnText='Recent Update' btnClick='OPEN_MODAL' />
-        </div>
-      </div>
-      <div style={{ display: 'none' }}>
-        <MeNowModal />
-      </div>
-      <ScrollMouse />
-    </div>
+    <Container style={{ paddingTop: '320px' }}>
+      <Grid container spacing={3} className='Intro-Block'>
+        <Grid item xs={8}>
+          <h1 className='Name-Surname name'>
+            <span>N</span><span>e</span><span>r</span><span>i</span><span>o</span><span>s </span>
+            <span>L</span><span>a</span><span>m</span><span>a</span><span>j</span>
+          </h1>
+          <AboutText />
+        </Grid>
+        <Grid item xs={4}>
+          {/* <Shader dimensions={[320, 320]} /> */}
+        </Grid>
+      </Grid>
+    </Container>
   )
 }
 
