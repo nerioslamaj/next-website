@@ -85,23 +85,26 @@ body {
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: $NL-dark;
+	background-color: $NL-black;
 }
 
 h1 {
 	font: normal 56px/1.2 'Brandon_900', sans-serif;
+	&.name {
+		font-size: 96px;
+	}
 }
 
 h2 {
-	font: normal 26px/1.2 'Brandon_700', sans-serif;
+	font: normal 48px/1.2 'Brandon_700', sans-serif;
 }
 
 h3 {
-	font: normal 20px/1.2 'Garamond_400', serif;
+	font: normal 36px/1.2 'Garamond_600', serif;
 }
 
 h4 {
-	font: normal 18px/1.2 'Garamond_400', serif;
+	font: normal 28px/1.2 'Garamond_400', serif;
 }
 
 h5 {

@@ -9,17 +9,17 @@ export const WorkItem = post => {
   )
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths () {
   const res = await fetchContentfulEntries('portfolio')
   const posts = await res
   const paths = posts.map((post) => ({
-    params: { pid: post.sys.id },
+    params: { pid: post.sys.id }
   }))
 
   return { paths, fallback: false }
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps ({ params }) {
   const res = await fetchContentfulEntry(params.pid)
   const post = await res
 

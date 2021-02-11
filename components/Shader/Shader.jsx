@@ -4,14 +4,14 @@ import createShader from 'canvas-sketch-util/shader'
 import glsl from 'glslify'
 import './Shader.scss'
 
-export const Shader = () => {
+export const Shader = (props) => {
   const [clippedCanvas, clipCanvas] = useState(true)
 
   useEffect(() => {
     const settings = {
       context: 'webgl',
       animate: true,
-      dimensions: [800, 800],
+      dimensions: props.dimensions || [116, 116],
       scaleToFit: false,
       id: 'shader',
       parent: document.getElementById('shaderParent')
